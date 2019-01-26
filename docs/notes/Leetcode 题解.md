@@ -1,4 +1,4 @@
-[🎉 面试进阶指南已上线](https://xiaozhuanlan.com/CyC2018)
+[⭐️ 面试进阶专栏 ⭐️](https://xiaozhuanlan.com/CyC2018)
 <!-- GFM-TOC -->
 * [算法思想](#算法思想)
     * [双指针](#双指针)
@@ -3050,7 +3050,6 @@ public boolean canPartition(int[] nums) {
     int W = sum / 2;
     boolean[] dp = new boolean[W + 1];
     dp[0] = true;
-    Arrays.sort(nums);
     for (int num : nums) {                 // 0-1 背包一个物品只能用一次
         for (int i = W; i >= num; i--) {   // 从后往前，先计算 dp[i] 再计算 dp[i-num]
             dp[i] = dp[i] || dp[i - num];
