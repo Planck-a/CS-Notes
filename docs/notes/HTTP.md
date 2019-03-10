@@ -1,4 +1,3 @@
-* [点击阅读面试进阶指南 ](https://github.com/CyC2018/Backend-Interview-Guide)
 <!-- GFM-TOC -->
 * [一 、基础概念](#一-基础概念)
     * [URI](#uri)
@@ -63,11 +62,7 @@
 
 URI 包含 URL 和 URN。
 
-- URI（Uniform Resource Identifier，统一资源标识符）
-- URL（Uniform Resource Locator，统一资源定位符）
-- URN（Uniform Resource Name，统一资源名称）
-
-<div align="center"> <img src="pics/1_2001550415765493.png" width="500px"> </div><br>
+<div align="center"> <img src="pics/417cb02e-853d-4288-a36e-9161ded2c9fd_200.png" width="600px"> </div><br>
 
 ## 请求和响应报文
 
@@ -882,3 +877,5 @@ DELETE /idX/delete HTTP/1.1   -> Returns 404
 - [Symmetric vs. Asymmetric Encryption – What are differences?](https://www.ssl2buy.com/wiki/symmetric-vs-asymmetric-encryption-what-are-differences)
 - [Web 性能优化与 HTTP/2](https://www.kancloud.cn/digest/web-performance-http2)
 - [HTTP/2 简介](https://developers.google.com/web/fundamentals/performance/http2/?hl=zh-cn)
+</br></br><div align="center">欢迎关注公众号，获取最新文章！</div></br>
+<div align="center"><img width="150px" src="https://github.com/CyC2018/CS-Notes/raw/master/docs/_media/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg"></img></div>
