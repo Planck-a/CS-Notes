@@ -127,7 +127,7 @@ static {
 }
 ```
 
-编译器会在自动装箱过程调用 valueOf() 方法，因此多个 Integer 实例使用自动装箱来创建并且值相同，那么就会引用相同的对象。
+编译器会在自动装箱过程调用 valueOf() 方法，因此多个值相同且值在缓存池范围内的 Integer 实例使用自动装箱来创建，那么就会引用相同的对象。
 
 ```java
 Integer m = 123;
@@ -189,7 +189,7 @@ value 数组被声明为 final，这意味着 value 数组初始化之后就不�
 
 如果一个 String 对象已经被创建过了，那么就会从 String Pool 中取得引用。只有 String 是不可变的，才可能使用 String Pool。
 
-<div align="center"> <img src="pics/474e5579-38b1-47d2-8f76-a13ae086b039.jpg"/> </div><br>
+<div align="center"> <img src="https://gitee.com/CyC2018/CS-Notes/raw/master/docs/pics/474e5579-38b1-47d2-8f76-a13ae086b039.jpg"/> </div><br>
 
 **3. 安全性** 
 
@@ -1317,7 +1317,7 @@ Throwable 可以用来表示任何可以作为异常抛出的类，分为两种�
 -  **受检异常** ：需要用 try...catch... 语句捕获并进行处理，并且可以从异常中恢复；
 -  **非受检异常** ：是程序运行时错误，例如除 0 会引发 Arithmetic Exception，此时程序崩溃并且无法恢复。
 
-<div align="center"> <img src="pics/PPjwP.png" width="600"/> </div><br>
+<div align="center"> <img src="https://gitee.com/CyC2018/CS-Notes/raw/master/docs/pics/PPjwP.png" width="600"/> </div><br>
 
 - [Java 入门之异常处理](https://www.tianmaying.com/tutorial/Java-Exception)
 - [Java 异常的面试问题及答案 -Part 1](http://www.importnew.com/7383.html)
@@ -1394,5 +1394,9 @@ Java 注解是附加在代码中的一些元信息，用于一些工具在编译
 
 - Eckel B. Java 编程思想[M]. 机械工业出版社, 2002.
 - Bloch J. Effective java[M]. Addison-Wesley Professional, 2017.
-</br></br><div align="center">欢迎关注公众号，获取最新文章！</div></br>
-<div align="center"><img width="150px" src="https://github.com/CyC2018/CS-Notes/raw/master/docs/_media/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg"></img></div>
+
+
+
+
+</br><div align="center">⭐️欢迎关注我的公众号 CyC2018，在公众号后台回复关键字 📚 **资料** 可领取复习大纲，这份大纲是我花了一整年时间整理的面试知识点列表，不仅系统整理了面试知识点，而且标注了各个知识点的重要程度，从而帮你理清多而杂的面试知识点。可以说我基本是按照这份大纲来进行复习的，这份大纲对我拿到了 BAT 头条等 Offer 起到很大的帮助。你们完全可以和我一样根据大纲上列的知识点来进行复习，就不用看很多不重要的内容，也可以知道哪些内容很重要从而多安排一些复习时间。</div></br>
+<div align="center"><img width="180px" src="https://cyc-1256109796.cos.ap-guangzhou.myqcloud.com/%E5%85%AC%E4%BC%97%E5%8F%B7.jpg"></img></div>
